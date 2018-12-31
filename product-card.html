@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Product Card</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/2.7.6/idangerous.swiper.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/product-card.css">
+
+</head>
+
+<body>
+    <div class="product-card" id="product-card">
+        <img src="https://images.unsplash.com/photo-1471440671318-55bdbb772f93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" class="product-card-thumbnail-image">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="scale-down" src="https://images.unsplash.com/photo-1471440671318-55bdbb772f93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80">
+                </div>
+                <div class="swiper-slide">
+                    <img class="scale-down" src="https://images.unsplash.com/photo-1470859624578-4bb57890378a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+                </div>
+                <div class="swiper-slide">
+                    <img class="scale-down" src="https://images.unsplash.com/photo-1508169351866-777fc0047ac5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+                </div>
+            </div>
+        </div>
+        <div class="pagination"></div>
+
+        <div class="product-details">
+            <div id="hide_on_hover">
+                <p class="book-title">ANSI C</p>
+                <p class="author">Dennis Ritchie. Publisher: Prentice Hall</p>
+                <span class="rating"> 4.5
+                      <p class="fa fa-star"></p> (124)
+                </span>
+            </div>
+            <div id="show_on_hover">
+                <i class="material-icons heart">favorite</i>
+                <button class="btn add-to-card">Add To Card</button>
+            </div>
+            <div class="not_change_on_hover">
+                <div class="product-quality">
+                    <div class="input-chip active">
+                        <input type="radio">Like New
+                    </div>
+                    <div class="input-chip">
+                        <input type="radio">Good 
+                    </div>
+                     <div class="input-chip">
+                        <input type="radio">Acceptable
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="new-price"> ₹10 </span>
+                    <span> <del class="original-price"> ₹20 </del> </span>
+                    <span class="discount"> (50% Off)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/2.7.6/idangerous.swiper.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="js/product-card.js"></script>
+
+</body>
+</html>
